@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="screen, print" type="text/css">
+  </head>
+  <body>
+    <main>
+    <div class="title-area">
+      <input type="text" id="title-input" class="title" placeholder="list title">
+    </div>
+    <div class="note-area">
+      <div class="note-functions">
+        <label id="notesLabel" for="notes">add notes&colon;</label><br>
+        <textarea id="notes" placeholder="write something here"></textarea>
+      </div>
+    </div> <!-- end note area -->
+    <div class="list-area">
+      <div class="list">
+        <ol id="list-items">
+          <li><input type="checkbox"><input type="text" placeholder="type list item here"></li>
+          <li><input type="checkbox"><input type="text"></li>
+          <li><input type="checkbox"><input type="text"></li>
+          <li><input type="checkbox"><input type="text"></li>
+        </ol>
+        <div class="no-print">
+          <button id="addItemButton">add item</button>
+          <button id="deleteItemButton" title="delete checked items">delete Item</button>
+        </div>
+      </div>
+    </div><!-- end list area -->
+    <div class="other-button-functions no-print">
+      <button id="print">print list</button>
+      <button id="toggleList">hide list</button>
+    </div>
+    </main>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+
+/* MAIN */
+*{
+  box-sizing:border-box!important;
+}
+body,
+html,
+.container-fluid
+{
+  margin:0 auto;
+  padding:0;
+  width:100%;
+  min-height:100vh;
+}
+/* COMPONENTS -navbar -buttons -forms */
+.container{
+  width:100%;
+}
+.btn{
+  border-radius:5px!important;
+}
+.btn-group-lg button{
+  display:block;
+  width:100%;
+  margin-bottom:5px;
+}
+.card-img-top{
+  border-radius:5px!important;
+}
+.check-group{
+  align-items: center;
+}
+.form-check-input{
+  margin-top:.3rem;
+}
+.social p,
+.social-bar{
+  display:inline-block;
+}
+
+figcaption,
+iframe{
+  width:100%;
+}
+.footer{
+  margin-top:0;
+  margin-left:0;
+  margin-right:0;
+  max-width:400px;
+}
+
+/* CAROUSEL */
+.carousel-inner,
+.carousel-item,
+.carousel-item img{
+  border-radius:5px;
+}
+/* MEDIA */
+@media (min-width:600px){
+  .btn-group-lg{
+    width:100%;
+  }
+  .btn-group-lg button{
+    display:inline-block;
+    width:32.7%;
+  }
+}
+@media (min-width: 768px){
+  .navbar-nav{
+    margin-left:20px;
+  }
+  .navbar-collapse .nav-link{
+    font-size:1.1rem;
+    margin-right:5px;
+  }
+  .btn-group-lg button{
+    display:inline-block;
+    width:32.8%;
+  }
+  .form-group{
+    display:inline-block;
+    width:32.5%!important;
+  }
+}
+@media (min-width:900px){
+  .navbar-collapse .nav-link{
+    font-size:1.3rem;
+    margin-right:10px;
+  }
+}
+@media (min-width:960px){
+  .btn-group-lg button{
+    display:inline-block;
+    width:33%;
+  }
+}
+
+@media (min-width:1000px){
+  .navbar-collapse .nav-link{
+    font-size:1.3rem;
+    margin-right:20px;
+  }
+}
+
+@media (min-width:1200px){
+  .navbar-collapse .nav-link{
+    margin-right:45px;
+  }
+  .navbar-brand h2{
+    font-size:2.8rem;
+  }
+  .navbar-brand h3{
+    font-size:2rem;
+  }
+}

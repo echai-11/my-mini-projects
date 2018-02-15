@@ -1,0 +1,96 @@
+
+body{
+    font-family: sans-serif;
+    color:white;
+    background-color:black;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    width:50%;
+    margin:auto;
+    height:100vh;
+}
+
+.title-area{
+    background:lightblue;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border-bottom: 5px solid white;
+    height:3rem;
+}
+h1{
+    text-align:center;
+}
+#title-input{
+    background-color:lightblue;
+    font-size:2rem;
+    border:none;
+    margin:auto;
+    text-align: center;
+    color:white;
+}
+#title-input:hover{
+    border:solid 1px white;
+    
+}
+#title-input:focus{
+    border:solid 1px white;
+
+}
+.note-area{
+    background:lightblue;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    border-bottom: 5px solid white; 
+}
+
+textarea{
+    background:lightblue;
+    resize:none;  
+    width:99%;
+    height:40px;
+    margin-top:5px;
+    outline:none;
+    border:none;
+    color:white;
+}
+textarea:focus{
+    border:solid 1px white;
+}
+textarea:hover{
+    border:solid 1px white;
+}
+.list-area{
+    background:lightblue;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    border-bottom: 5px solid white;
+}
+ol{
+    list-style: none;
+    margin-left: -44px;
+    margin-top:-5px;
+}
+li input{
+    border:none;
+    outline:none;
+    background-color:lightblue;
+    color:white;
+    padding:1px;
+}
+
+
+.other-button-functions{
+    background:lightblue;
+    padding:10px;
+    display:flex;
+    border-bottom: 5px solid white;
+    justify-content: space-between;
+}
+

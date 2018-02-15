@@ -1,0 +1,44 @@
+html, body{
+    margin:auto 0;
+    padding:0;
+}
+html{
+    height:100%;
+    box-sizing: border-box;
+}
+body{
+    min-height:100%;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    background: #030303;
+}
+header, footer{
+    background-color: #fdfdfd;
+}
+header{
+    margin-top:0;
+}
+footer{
+    text-align:center;
+    padding:5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+h1{
+    text-align:center;
+    padding:10px;
+    margin:0;
+}
+div{
+    text-align: center;
+    padding:20px;
+}
+a{
+    text-decoration:none;
+    color:#fdfdfd;
+}
+a:hover{
+    color:#3ea1a3;
+}
