@@ -1,14 +1,14 @@
 html, body{
     margin:auto 0;
     padding:0;
+    z-index:0;
+    height:100%;
 }
 html{
-    height:100%;
     box-sizing: border-box;
 }
 body{
     min-height:100%;
-    position: relative;
     font-family: "Ubuntu", sans-serif;
     background: #030303;
 }
@@ -25,20 +25,88 @@ footer{
     right: 0;
     bottom: 0;
     left: 0;
+    z-index:2;
 }
 h1{
     text-align:center;
     padding:10px;
     margin:0;
 }
-div{
-    text-align: center;
+.blurb{
+    color:white;
     padding:20px;
+    line-height: 1.5rem;
+    text-align:center;
 }
-a{
+#mainBtn{
+    height:30px;
+    line-height:26px;
+    text-align:center;
+    background-color:tomato;
+    color:white;
+}
+#mainBtn:hover{
+    animation: tomatoing .5s ease-in;
+    background-color: #cc1f00;
+    font-weight:bold;
+}
+@keyframes tomatoing {
+    from {background-color: tomato;}
+    to {background-color: #cc1f00;}
+}
+/*Modal Menu Styles*/
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 86px;
+    width: 100%;
+    height: calc(100% - 28px); 
+    background-color: white;
+}
+#modal-content {
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 28px);
+}
+#modal-menu{
+    font-size: 1.2rem;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+#modal-menu li{
+    width:100%;
+    text-align:center;
+}
+.menu-div{
+    padding:10px;
+    background-color:white;
+}
+.menu-div + .menu-div{
+    background-color:blue;
+}
+
+#modal-menu li a{
     text-decoration:none;
-    color:#fdfdfd;
+    color: black;
 }
-a:hover{
-    color:#3ea1a3;
+#modal-menu li a:hover{
+    text-decoration:none;
+    font-weight: bold;
+}
+.close {
+    color: tomato;
+    outline:none;
+    border:none;
+    font-size: 28px;
+    font-weight: bold;
+    float:right;
+    padding-right:10px;
+}
+.close:hover,
+.close:focus {
+    color: orange;
+    cursor: pointer;
 }
