@@ -33,7 +33,7 @@ h1{
     margin:0;
 }
 .blurb{
-    color:white;
+    color:#fdfdfd;
     padding:20px;
     line-height: 1.5rem;
     text-align:center;
@@ -43,7 +43,7 @@ h1{
     line-height:26px;
     text-align:center;
     background-color:tomato;
-    color:white;
+    color:#fdfdfd;
 }
 #mainBtn:hover{
     animation: tomatoing .5s ease-in;
@@ -63,7 +63,7 @@ h1{
     top: 86px;
     width: 100%;
     height: calc(100% - 28px); 
-    background-color: white;
+    background-color: #fdfdfd;
 }
 #modal-content {
     margin: 0;
@@ -82,15 +82,11 @@ h1{
 }
 .menu-div{
     padding:10px;
-    background-color:white;
-}
-.menu-div + .menu-div{
-    background-color:blue;
 }
 
 #modal-menu li a{
     text-decoration:none;
-    color: black;
+    color: #030303;
 }
 #modal-menu li a:hover{
     text-decoration:none;
@@ -107,6 +103,6 @@ h1{
 }
 .close:hover,
 .close:focus {
-    color: orange;
+    color: #030303;
     cursor: pointer;
 }
