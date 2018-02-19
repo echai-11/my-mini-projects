@@ -1,0 +1,26 @@
+body{
+    margin:0 auto;
+    font-family:'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+}
+form{
+    display:flex;
+    justify-content: center;
+}
+label, input{
+    margin-right: 5px;
+}
+#photos{
+    margin-top:20px;
+    width:100%;
+    min-height:100vh;
+}
+#photos ul{
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:10px;
+}
+

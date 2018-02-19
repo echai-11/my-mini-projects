@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your news app</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="newsapp.js"></script>
+    <script>
+    window.onload = initDate;
+        function initDate() {
+        var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        var now = new Date();
+        var dtString = monName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+        document.getElementById("dateField"). innerHTML = dtString;
+        }
+    </script>
+</head>
+<body>
+    <div id="dateField" class="clearfix"></div>
+    <div class="heading clearfix">
+        <h1>get the news</h1>
+    </div>
+    <form>
+        <label for="search_value">search news:</label>
+        <input type="search" name="search"  id="search">
+        <input type="submit" value="search" id = "submit">
+    </form>
+    <div id="output"></div>
+</body>
+</html>

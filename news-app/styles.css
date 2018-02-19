@@ -1,0 +1,32 @@
+#dateField{
+    float:right;
+}
+.clearfix::before{
+    content:"";
+    clear:both;
+    display:table;
+    overflow:hidden;
+}
+
+h1{
+    text-align:center;
+}
+form{
+    margin: 0 auto;
+    text-align:center;
+    padding:10px;
+}
+#output{
+    min-height:100vh;
+    width:100%;
+}
+
+#output img {
+    height:100px;
+    width:100px;
+    float:right;
+}
+
+ul li{
+    padding:10px;
+}
