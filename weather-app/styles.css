@@ -78,3 +78,6 @@ button:hover{
     border-radius: 10px;
     background-color: black;
 }
+div:last-of-type{
+    color:white;
+}
