@@ -9,10 +9,10 @@ function getInnerText (id){
 }
 function limit (){
 	if (display_screen.innerText.length >= 11){
-	display_screen.innerText = " ";
+	var newstring = "";
+	display_screen.innerText = newstring;
 	}
 }
-console.log(button);
 function init($keys){
 	for (i = 0; i< $keys.length; i++){
 		$keys[i].onclick = function(){
