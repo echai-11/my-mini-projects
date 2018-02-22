@@ -4,11 +4,10 @@ body{
     color:white;
     background-color:black;
     margin:0;
-    padding:0;
+    padding:10px;
     box-sizing: border-box;
 }
 main{
-    width:50%;
     margin:auto;
     height:100vh;
 }
@@ -29,7 +28,7 @@ h1{
     background-color:lightblue;
     font-size:2rem;
     border:none;
-    margin:auto;
+    width:100%;
     text-align: center;
     color:white;
 }
@@ -83,6 +82,7 @@ li input{
     background-color:lightblue;
     color:white;
     padding:1px;
+    margin-bottom:20px;
 }
 
 
@@ -94,3 +94,13 @@ li input{
     justify-content: space-between;
 }
 
+@media (min-width:900px){
+    main{
+        width:80%;
+    }
+}
+@media (min-width:1200px){
+    main{
+        width:50%;
+    }
+}
