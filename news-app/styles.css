@@ -1,5 +1,9 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 #dateField{
-    float:right;
+    text-align:center;
+    font-weight:bold;
 }
 .clearfix::before{
     content:"";
@@ -21,12 +25,35 @@ form{
     width:100%;
 }
 
-#output img {
-    height:100px;
-    width:100px;
-    float:right;
+ul li{
+    list-style:none;
+    padding:10px;
+}
+li a{
+    font-size:1.5rem;
+}
+.desc{
+    display:block;
+    margin-top:5px;
+}
+.source{
+    font-style: italic;
 }
 
-ul li{
-    padding:10px;
+@media (max-width:360px){
+    body{
+        padding:10px;
+    }
+    ul {
+        margin-left: -35px;
+    }
+    input{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+    }
+    #search{
+        border: 1px solid #cccccc;
+    }
 }

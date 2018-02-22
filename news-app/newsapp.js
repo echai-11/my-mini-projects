@@ -26,7 +26,8 @@ $(document).ready(function(){
             newsString += "<a href= " + News.url + " target='_blank'>";
             newsString += News.title;
             newsString += "</a>";
-            newsString += "<br><span>" + News.source.name + "</span>";
+            newsString += "<br><span class='source'>" + News.source.name + "</span>";
+            newsString += "<span class='desc'>" + News.description + "</span>";
             newsString += "</li>";
         });
         newsString += "</ul>";
