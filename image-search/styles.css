@@ -66,6 +66,19 @@ button{
 }
 
 @media (min-width:800px){
+    form{
+        display:flex;
+        justify-content: center;
+    }
+    label, input, button {
+        margin-left:10px;
+    }
+    button{
+        display:inline;
+        height: 19px;
+        line-height: 5px;
+
+    }
     #photos{
         display:flex;
         flex-direction:column;
