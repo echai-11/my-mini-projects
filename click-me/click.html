@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yes or no</title>
+    <style>
+        html{
+            background-color:black;
+            color:white;
+            font-size:2rem;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align:center;
+            font-family:'Codystar', sans-serif;
+        }
+        body{
+            text-align:center;
+        }
+        div {
+            font-family: 'Montserrat', sans-serif;
+        }
+        input{
+            font-family: 'Montserrat', sans-serif;
+            width:300px;
+            border-radius:5px;
+            padding:5px;
+            border:none;
+            outline:none;
+            font-weight:bold;
+            box-shadow: inset 0 0 15px #1b1509;
+        }
+        input:focus{
+            background-color: #d3a14d;
+        }
+        button{
+            cursor:pointer;
+            margin-top:20px;
+            font-family: 'Montserrat', sans-serif;
+            width:80px;
+            height:30px;
+            border-radius:5px;
+            outline:none;
+            border:none;
+            background-color:#395f88;
+            box-shadow: inset 0 0 15px #121d2b;
+            position:relative;
+        }
+        button:hover{
+            background-color: #4c7fb4;
+            font-weight:bold;
+            box-shadow: inset 0 0 10px #121d2b;
+        }
+        button:active{
+            border: 1px white solid;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Montserrat" rel="stylesheet">
+<body>
+    <h1>ask a yes or no question</h1>
+
+    <input type="text" id="question">
+    <div id="output-q">
+    </div>
+    <div id="output-a">
+    </div>
+    <button type="submit" id="submit" value="on">ask</button>
+<script src="click.js"></script>
+</body>
+</html>
