@@ -18,7 +18,7 @@ function init($keys){
 		$keys[i].onclick = function(){
 			var buttonID = this.innerText;
 			if (buttonID == "="){
-				var output= eval(display_screen.innerText);
+				var output= eval(display_screen.innerText).toFixed(2);
 				display_screen.innerText = output;
 				var string = display_screen.innerText;
 				if (string == "undefined" || string == null){
@@ -59,9 +59,9 @@ function init($keys){
 				bonusmessage.style.marginTop = "-3px";
 				bonusmessage.style.marginBottom= "0";
 			} 
-		}
-	}
-}
+		} //end keys on click
+	}//end for loop
+}// end init
 init(button);
 
 
