@@ -1,9 +1,7 @@
-$(document).ready(function() {
-    $("#mainBtn").click(function(){
-        $("#modal-content").css({"display":"block"});
-    });
-
-    $("#xButton").click(function(){
-        $("#modal-content").css({"display":"none"});
-    })
-});
+$(document).ready(function(){
+    var toggleButton = $("#toggleButton");
+    toggleButton.on("click", function(){
+        var x = $("div.topnav");
+        x.toggleClass("responsive");
+    });//toggleButton onclick 
+});//end document ready
